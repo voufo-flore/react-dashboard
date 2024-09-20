@@ -24,10 +24,12 @@ export default UserBoard;
 
 */
 import React from "react";
+import IMAGES from "../images/image";
 
 const users = [
   {
     name: "Yiorgos Avraamu",
+    img: IMAGES.img1,
     country: "US",
     usage: 50,
     registered: "Jan 10, 2023",
@@ -36,6 +38,7 @@ const users = [
   },
   {
     name: "Avram Tarasios",
+    img: IMAGES.img2,
     country: "BR",
     usage: 50,
     registered: "Jan 10, 2023",
@@ -44,6 +47,7 @@ const users = [
   },
   {
     name: "Quintin Ed",
+    img: IMAGES.img3,
     country: "IN",
     usage: 50,
     registered: "Jan 10, 2023",
@@ -52,6 +56,7 @@ const users = [
   },
   {
     name: "Enéas Kwadwo",
+    img: IMAGES.img4,
     country: "FR",
     usage: 50,
     registered: "Jan 10, 2023",
@@ -60,6 +65,7 @@ const users = [
   },
   {
     name: "Agapetus Tadeáš",
+    img: IMAGES.img5,
     country: "ES",
     usage: 50,
     registered: "Jan 10, 2023",
@@ -68,6 +74,7 @@ const users = [
   },
   {
     name: "Friderik Dávid",
+    img: IMAGES.img5,
     country: "PL",
     usage: 50,
     registered: "Jan 10, 2023",
@@ -87,9 +94,7 @@ const countryFlags = {
 
 const UserTable = () => {
   return (
-    <div
-      style={{ padding: "1rem", backgroundColor: "#fff", color: "black" }}
-    >
+    <div style={{ padding: "1rem", backgroundColor: "#fff", color: "black" }}>
       <div
         style={{
           display: "flex",
@@ -133,10 +138,23 @@ const UserTable = () => {
                       width: "2rem",
                       height: "2rem",
                       borderRadius: "50%",
-                      backgroundColor: "#4b5563",
                       marginRight: "0.75rem",
+                      position: "relative",
                     }}
-                  ></div>
+                  >
+                    <img
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        borderRadius: "50%",
+                        position: "relative",
+                        top: 0,
+                        left: 0,
+                      }}
+                      src={user.img}
+                      alt={user.name}
+                    />
+                  </div>
                   <div>
                     <div>{user.name}</div>
                     <div style={{ fontSize: "0.875rem", color: "#9ca3af" }}>

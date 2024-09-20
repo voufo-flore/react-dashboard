@@ -4,7 +4,7 @@ import { CategoryScale } from "chart.js";
 import { Chart, registerables } from "chart.js";
 import { MoveDown, MoveUp, ShoppingCart, UserPlus, Users } from "lucide-react";
 import UserBoard from "./Users";
-import TrafficDashboard from "./TrafficDashboard";
+import TrafficDashboard from "./TrafficDashboard/TrafficDashboard";
 
 Chart.register(CategoryScale, ...registerables);
 const Home = () => {
@@ -27,7 +27,7 @@ const Home = () => {
       {
         label: "Users",
         data: [75, 78, 79, 45, 30, 19, 45, 90, 70, 25, 15, 100],
-        backgroundColor: "blue",
+        backgroundColor: "rgb(127, 231, 171)",
         borderColor: "white",
         borderWidth: 0.3,
         tension: 0.1,
@@ -36,7 +36,7 @@ const Home = () => {
         label: "New Users",
         data: [75, 78, 79, 45, 30, 19, 45, 90, 70, 25, 15, 100],
         backgroundColor: "rgb(1, 183, 255)",
-        borderColor: "whitesm",
+        borderColor: "whites",
         borderWidth: 0.3,
         tension: 0.1,
       },
@@ -118,11 +118,9 @@ const Home = () => {
         </div>
       </div>
       <UserBoard/>
-      <div className="bg-container">
-        <h2>Traffic</h2>
-
-        
-    
+      <div>
+        <h2></h2>
+      <TrafficDashboard  className="flore"/>
       </div>
     </div>
   );

@@ -12,6 +12,9 @@ body {
   background-color: rgb(207, 207, 207);
   overflow: hidden;
 }
+.flore {
+  margin-top: 3rem;
+}
 
 .main {
   width: 100%;
@@ -169,16 +172,6 @@ input {
 }
 .session {
   background-color: blue;
-}
-
-.bg-container {
-  height: 40rem;
-  width: 100rem;
-  background-color: white;
-  border-radius: 10px;
-  gap: 10px;
-  margin-top: 1.5rem;
-  margin-left: 10px;
 }
 
 .box-status{

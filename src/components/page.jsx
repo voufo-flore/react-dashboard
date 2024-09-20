@@ -1,6 +1,7 @@
 import PageBody from "./page-body";
 import Sidebar from "./Sidebar/Sidebar";
 
+
 export const Page = () => {
   return (
     <div className="main">

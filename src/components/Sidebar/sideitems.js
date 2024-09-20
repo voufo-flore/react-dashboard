@@ -46,7 +46,51 @@ const sidebarItems = [
             {
               text: "Breadcrumb",
               link: "/base/breadcrumbs"
-            }
+            },
+            {
+              text: "Cards",
+              link: "/base/cards"
+            },
+            {
+              text: "Carousels",
+              link: "/base/carousels"
+            },
+            {
+              text: "Collapses",
+              link: "/base/collapses"
+            },
+            {
+              text: "ListGroups",
+              link: "/base/listgroups"
+            },
+            {
+              text: "Navbars",
+              link: "/base/navbars"
+            },
+            {
+              text: "Pagination",
+              link: "/base/pagination"
+            },
+            {
+              text: "PopOvers",
+              link: "/base/popovers"
+            },
+            {
+              text: "Progress",
+              link: "/base/progress"
+            },
+            {
+              text: "Spinners",
+              link: "/base/spinners"
+            },
+            {
+              text: "Tables",
+              link: "/base/tables"
+            },
+            {
+              text: "Tooltips",
+              link: "/base/tooltips"
+            },
           ]
         },
         {
@@ -56,13 +100,17 @@ const sidebarItems = [
           dropdown: true,
           elements: [
             {
-              text: "Color",
-              link: "/color"
+              text: "ButtonGroups",
+              link: "/buttongroups"
             },
             {
-              text: "Topography",
-              link: "/Topography"
-            }
+              text: "Buttons",
+              link: "/buttons"
+            },
+            {
+              text: "Dropdowns",
+              link: "/dropdowns"
+            },
           ]
         },
         {
@@ -72,13 +120,37 @@ const sidebarItems = [
           dropdown: true,
           elements: [
             {
-              text: "Color",
-              link: "/color"
+              text: "ChecksRadios",
+              link: "/checksradios"
             },
             {
-              text: "Topography",
-              link: "/Topography"
-            }
+              text: "FloatingLabels",
+              link: "/floatinglabels"
+            },
+            {
+              text: "FormControl",
+              link: "/formcontrol"
+            },
+            {
+              text: "InputGroup",
+              link: "/inputgroup"
+            },
+            {
+              text: "Layout",
+              link: "/layout"
+            },
+            {
+              text: "Range",
+              link: "/range"
+            },
+            {
+              text: "Select",
+              link: "/select"
+            },
+            {
+              text: "Validation",
+              link: "/validation"
+            },
           ]
         },
         {
@@ -144,7 +216,7 @@ const sidebarItems = [
         {
           text: "Google Maps",
           icon: MapIcon,
-          link: "/",
+          link: "/google maps",
           badge: "PRO"
         }
       ]
