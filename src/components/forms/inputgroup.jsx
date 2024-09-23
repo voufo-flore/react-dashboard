@@ -4,11 +4,13 @@ import {
   CCardBody,
   CCardHeader,
   CCol,
+  CButton,
   CDropdown,
   CDropdownDivider,
   CDropdownItem,
   CDropdownMenu,
   CDropdownToggle,
+  CFormText,
   CFormCheck,
   CFormInput,
   CFormLabel,
@@ -66,7 +68,7 @@ const InputGroup = () => {
               </InputGroup>
               <InputGroup>
                 <CInputGroupText>With textarea</CInputGroupText>
-                <CFormTextArea aria-label="With textarea"></CFormTextArea>
+                <CFormText aria-label="With textarea"></CFormText>
               </InputGroup>
             </DocsExample>
           </CCardBody>

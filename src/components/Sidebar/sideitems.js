@@ -160,13 +160,17 @@ const sidebarItems = [
           dropdown: true,
           elements: [
             {
-              text: "Color",
-              link: "/color"
+              text: "CoreUIBrands",
+              link: "/coreuibrands"
             },
             {
-              text: "Topography",
-              link: "/Topography"
-            }
+              text: "CoreUIFlags",
+              link: "/coreuiflags"
+            },
+            {
+              text: "CoreUIFree",
+              link: "/coreuifree"
+            },
           ]
         },
         {
@@ -183,13 +187,36 @@ const sidebarItems = [
               text: "Badges",
               link: "/badges"
             },
+            {
+              text: "Modals",
+              link: "/modals"
+            },
+            {
+              text: "Toasts",
+              link: "/toasts"
+            },
           ]
         },
         {
           text: "Widgets",
           icon: ClipboardList,
           link: "/",
-          badge: "NEW"
+          dropdown: true,
+          elements: [
+            {
+              text: "Widgets",
+              link: "/widgets"
+            },
+            {
+              text: "WidgetsBrand",
+              link: "/widgetsbrand"
+            },
+            {
+              text: "WidgetsDropdown",
+              link: "/widgetsdropdown"
+            },
+          ]
+        
         },
         {
           text: "Smart Table",

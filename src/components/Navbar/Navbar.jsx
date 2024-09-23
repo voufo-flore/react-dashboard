@@ -1,7 +1,14 @@
-import { Bell, MailOpen, Search, LayoutList, Sun, LayoutGrid } from "lucide-react";
-import "./Navbar.css"
+import {
+  Bell,
+  MailOpen,
+  Search,
+  LayoutList,
+  Sun,
+  LayoutGrid,
+} from "lucide-react";
+import "./Navbar.css";
 
-const Header = () => {
+const Header = ({ bellopen }) => {
   return (
     <div className="nav-wrapper">
       <div className="nav">
@@ -11,7 +18,9 @@ const Header = () => {
         </div>
       </div>
       <div className="lucide">
-        <Bell />
+        <div onClick={bellopen} style={{ cursor: "pointer" }}>
+          <Bell />
+        </div>
         <LayoutList />
         <MailOpen />
         <Sun />

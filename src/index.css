@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
   margin: 0;
@@ -64,13 +64,10 @@ input {
   padding: 50px;
 }
 
-
-
- .lucide {
+.lucide {
   display: flex;
   margin: 20px;
-} 
-
+}
 
 .text {
   margin: 7px;
@@ -91,7 +88,6 @@ input {
   width: 530px;
   background-color: white;
   border-radius: 10px;
- 
 }
 .container2 {
   height: 33rem;
@@ -99,8 +95,6 @@ input {
   background-color: white;
   margin-right: 1.4rem;
   border-radius: 10px;
-  
-
 }
 .second1 {
   height: 200px;
@@ -135,12 +129,11 @@ input {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.users_cta{
+.users_cta {
   display: flex;
-
 }
-.users-left{
-  flex:1;
+.users-left {
+  flex: 1;
 
   margin: 1rem;
   border-radius: 10px;
@@ -149,20 +142,18 @@ input {
 
 .user,
 .conversation,
-.session{
+.session {
   width: 90%;
   border-radius: 10px;
   height: 12rem;
   margin: 1rem;
   background: white;
-  
 }
-.users-right{
+.users-right {
   margin-right: 1rem;
   border-radius: 10px;
   width: 20%;
   height: 40rem;
-  
 }
 .user {
   background-color: palevioletred;
@@ -174,19 +165,39 @@ input {
   background-color: blue;
 }
 
-.box-status{
+.box-status {
   display: flex;
   align-items: center;
 }
 
-.box-status-icon{
+.box-status-icon {
   width: 16px;
   height: 16px;
   background: red;
 }
 
-.flex{display: flex; align-items: center;}
+.flex {
+  display: flex;
+  align-items: center;
+}
 
 .users-btn {
   display: flex;
+}
+.bell-cnt {
+  display: none;
+  height: 40%;
+  width: 20%;
+  background-color: white;
+  right: 100px;
+  border: solid 2px black;
+  position: absolute;
+  margin-top: 80px;
+  z-index: 100;
+}
+.bell-cnt.open {
+  display: block;
+}
+.bell-cnt.close {
+  display: none;
 }

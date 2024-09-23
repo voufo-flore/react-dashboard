@@ -1,9 +1,11 @@
 import React from 'react'
 import {
+  CForm,
   CCard,
   CCardBody,
   CCardHeader,
   CCol,
+  CFormText,
   CFormInput,
   CFormLabel,
   CFormFloating,
@@ -27,7 +29,7 @@ const FloatingLabels = () => {
               pseudo-element. Also note that the <code>&lt;CFormInput&gt;</code> must come first so
               we can utilize a sibling selector (e.g., <code>~</code>).
             </p>
-            <DocsExample href="forms/floating-labels">
+            <DocsExample href="Cform/floating-labels">
               <CFormFloating className="mb-3">
                 <CFormInput type="email" id="floatingInput" placeholder="name@example.com" />
                 <CFormLabel htmlFor="floatingInput">Email address</CFormLabel>
@@ -41,7 +43,7 @@ const FloatingLabels = () => {
               When there&#39;s a <code>value</code> already defined, <code>&lt;CFormLabel&gt;</code>
               s will automatically adjust to their floated position.
             </p>
-            <DocsExample href="forms/floating-labels">
+            <DocsExample href="Cform/floating-labels">
               <CFormFloating>
                 <CFormInput
                   type="email"
@@ -62,30 +64,30 @@ const FloatingLabels = () => {
           </CCardHeader>
           <CCardBody>
             <p className="text-body-secondary small">
-              By default, <code>&lt;CFormTectArea&gt;</code>s will be the same height as{' '}
+              By default, <code>&lt;CFormText&gt;</code>s will be the same height as{' '}
               <code>&lt;CFormInput&gt;</code>s.
             </p>
-            <DocsExample href="forms/floating-labels#textareas">
+            <DocsExample href="Cform/floating-labels#textareas">
               <CFormFloating>
-                <CFormTectArea
+                <CFormText
                   id="floatingTextarea"
                   placeholder="Leave a comment here"
-                ></CFormTectArea>
+                ></CFormText>
                 <CFormLabel htmlFor="floatingTextarea">Comments</CFormLabel>
               </CFormFloating>
             </DocsExample>
             <p className="text-body-secondary small">
-              To set a custom height on your <code>&lt;CFormTectArea;&gt;</code>, do not use the{' '}
+              To set a custom height on your <code>&lt;CFormText;&gt;</code>, do not use the{' '}
               <code>Crows</code> attribute. Instead, set an explicit <code>height</code> (either
               inline or via custom CSS).
             </p>
-            <DocsExample href="forms/floating-labels#textareas">
+            <DocsExample href="Cform/floating-labels#textareas">
               <CFormFloating>
-                <CFormTectArea
+                <CFormText
                   placeholder="Leave a comment here"
                   id="floatingTextarea2"
                   style={{ height: '100px' }}
-                ></CFormTectArea>
+                ></CFormText>
                 <CFormLabel htmlFor="floatingTextarea2">Comments</CFormLabel>
               </CFormFloating>
             </DocsExample>
@@ -100,21 +102,21 @@ const FloatingLabels = () => {
           <CCardBody>
             <p className="text-body-secondary small">
               Other than <code>&lt;CFormInput&gt;</code>, floating labels are only available on{' '}
-              <code>&lt;FormS&gt;</code>s. They work in the same way, but unlike{' '}
+              <code>&lt;CForm&gt;</code>s. They work in the same way, but unlike{' '}
               <code>&lt;CFormInput&gt;</code>s, they&#39;ll always show the{' '}
               <code>&lt;CFormLabel&gt;</code> in its floated state.{' '}
               <strong>
                 Selects with <code>size</code> and <code>multiple</code> are not supported.
               </strong>
             </p>
-            <DocsExample href="forms/floating-labels#selects">
+            <DocsExample href="Cform/floating-labels#selects">
               <CFormFloating>
-                <FormS id="floatingSelect" aria-label="Floating label select example">
+                <CForm id="floatingSelect" aria-label="Floating label select example">
                   <option>Open this select menu</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>
-                </FormS>
+                </CForm>
                 <CFormLabel htmlFor="floatingSelect">Works with selects</CFormLabel>
               </CFormFloating>
             </DocsExample>
@@ -131,7 +133,7 @@ const FloatingLabels = () => {
               When working with the CoreUI for Bootstrap grid system, be sure to place form elements
               within Ccolumn classes.
             </p>
-            <DocsExample href="forms/floating-labels#layout">
+            <DocsExample href="Cform/floating-labels#layout">
               <CRow xs={{ gutter: 2 }}>
                 <CCol md>
                   <CFormFloating>
@@ -146,12 +148,12 @@ const FloatingLabels = () => {
                 </CCol>
                 <CCol md>
                   <CFormFloating>
-                    <FormS id="floatingSelectGrid" aria-label="Floating label select example">
+                    <CForm id="floatingSelectGrid" aria-label="Floating label select example">
                       <option>Open this select menu</option>
                       <option value="1">One</option>
                       <option value="2">Two</option>
                       <option value="3">Three</option>
-                    </FormS>
+                    </CForm>
                     <CFormLabel htmlFor="floatingSelectGrid">Works with selects</CFormLabel>
                   </CFormFloating>
                 </CCol>
