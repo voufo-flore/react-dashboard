@@ -12,28 +12,28 @@ import {
   CRow,
 } from '@coreui/react'
 import DocsExample from "../DocsExample"
-const CFormControl = () => {
+const FormControl = () => {
   return (
     <CRow>
       <CCol xs={12}>
         <CCard className="mb-4">
           <CCardHeader>
-            <strong>React CForm Control</strong>
+            <strong>React Form Control</strong>
           </CCardHeader>
           <CCardBody>
-            <DocsExample href="Cforms/Cform-control">
+            <DocsExample href="forms/Cform-control">
               <CForm>
                 <div className="mb-3">
-                  <CFormLabel htmlFor="exampleCFormControlInput1">Email address</CFormLabel>
+                  <CFormLabel htmlFor="exampleFormControlInput1">Email address</CFormLabel>
                   <CFormInput
                     type="email"
-                    id="exampleCFormControlInput1"
+                    id="exampleFormControlInput1"
                     placeholder="name@example.com"
                   />
                 </div>
                 <div className="mb-3">
-                  <CFormLabel htmlFor="exampleCFormControlTextarea1">Example textarea</CFormLabel>
-                  <CFormTextarea id="exampleCFormControlTextarea1" Crows={3}></CFormTextarea>
+                  <CFormLabel htmlFor="exampleFormControlTextarea1">Example textarea</CFormLabel>
+                  <CFormTextarea id="exampleFormControlTextarea1" Crows={3}></CFormTextarea>
                 </div>
               </CForm>
             </DocsExample>
@@ -50,7 +50,7 @@ const CFormControl = () => {
               Set heights using <code>size</code> property like <code>size=&#34;lg&#34;</code> and{' '}
               <code>size=&#34;sm&#34;</code>.
             </p>
-            <DocsExample href="Cforms/Cform-control#sizing">
+            <DocsExample href="forms/Cform-control#sizing">
               <CFormInput
                 type="text"
                 size="lg"
@@ -84,7 +84,7 @@ const CFormControl = () => {
               Add the <code>disabled</code> boolean attribute on an input to give it a grayed out
               appearance and remove pointer events.
             </p>
-            <DocsExample href="Cforms/Cform-control#disabled">
+            <DocsExample href="forms/Cform-control#disabled">
               <CFormInput
                 type="text"
                 placeholder="Disabled input"
@@ -115,7 +115,7 @@ const CFormControl = () => {
               the input&#39;s value. Read-only inputs appear lighter (just like disabled inputs),
               but retain the standard cursor.
             </p>
-            <DocsExample href="Cforms/Cform-control#readonly">
+            <DocsExample href="forms/Cform-control#readonly">
               <CFormInput
                 type="text"
                 placeholder="Readonly input here..."
@@ -197,7 +197,7 @@ const CFormControl = () => {
             <strong>React CForm Control</strong> <small>File input</small>
           </CCardHeader>
           <CCardBody>
-            <DocsExample href="Cforms/Cform-control#file-input">
+            <DocsExample href="forms/Cform-control#file-input">
               <div className="mb-3">
                 <CFormLabel htmlFor="CformFile">Default file input example</CFormLabel>
                 <CFormInput type="file" id="CformFile" />
@@ -228,7 +228,7 @@ const CFormControl = () => {
             <strong>React CForm Control</strong> <small>CColor</small>
           </CCardHeader>
           <CCardBody>
-            <DocsExample href="Cforms/Cform-control#Ccolor">
+            <DocsExample href="forms/Cform-control#Ccolor">
               <CFormLabel htmlFor="exampleCColorInput">CColor picker</CFormLabel>
               <CFormInput
                 type="Ccolor"
@@ -244,4 +244,4 @@ const CFormControl = () => {
   )
 }
 
-export default CFormControl
+export default FormControl

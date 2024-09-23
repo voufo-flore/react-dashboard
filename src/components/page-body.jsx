@@ -27,6 +27,15 @@ import Range from "./forms/range";
 import Select from "./forms/select";
 import Validation from "./forms/validation";
 import MapComponent from "./Google_map";
+import Alerts from "./notifications/Alerts";
+import Badges from "./notifications/Badges";
+import Toasts from "./notifications/Toasts";
+import Modals from "./notifications/Modals";
+import Login from "./pages/Login";
+import Page404 from "./pages/Page404";
+import Page500 from "./pages/Page500";
+import Register from "./pages/Register";
+
 
 
 
@@ -61,6 +70,14 @@ const PageBody = () => {
           <Route path="/base/range" element={<Range />} />
           <Route path="/base/select" element={<Select />} />
           <Route path="/base/validation" element={<Validation />} />
+          <Route path="/base/alerts" element={<Alerts />} />
+          <Route path="/base/badges" element={<Badges />} />
+          <Route path="/base/modals" element={<Modals />} />
+          <Route path="/base/toasts" element={<Toasts />} />
+          <Route path="/base/login" element={<Login />} />
+          <Route path="/base/page404" element={<Page404 />} />
+          <Route path="/base/page500" element={<Page500 />} />
+          <Route path="/base/register" element={<Register />} />
 
           <Route path="/base/maps" element={<MapComponent/>} />
 

@@ -15,7 +15,7 @@ import {
   CRow,
   CTooltip,
 } from '@coreui/react'
-import { DocsExample } from 'src/components'
+import DocsExample  from '../DocsExample'
 
 const LiveDemo = () => {
   const [visible, setVisible] = useState(false)

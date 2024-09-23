@@ -176,13 +176,13 @@ const sidebarItems = [
           dropdown: true,
           elements: [
             {
-              text: "Color",
-              link: "/color"
+              text: "Alerts",
+              link: "/alerts"
             },
             {
-              text: "Topography",
-              link: "/Topography"
-            }
+              text: "Badges",
+              link: "/badges"
+            },
           ]
         },
         {
@@ -196,7 +196,7 @@ const sidebarItems = [
           icon: Grid3X3,
           link: "/",
           badge: "PRO"
-        }
+        },
       ]
     },
     {
@@ -231,13 +231,21 @@ const sidebarItems = [
           dropdown: true,
           elements: [
             {
-              text: "Color",
-              link: "/color"
+              text: "Login",
+              link: "/login"
             },
             {
-              text: "Topography",
-              link: "/Topography"
-            }
+              text: "Page404",
+              link: "/page404"
+            },
+            {
+              text: "Page500",
+              link: "/Page500"
+            },
+            {
+              text: "Register",
+              link: "/register"
+            },
           ]
         },
         {
@@ -256,6 +264,7 @@ const sidebarItems = [
             }
           ]
         }
+        
       ]
     }
   ];
