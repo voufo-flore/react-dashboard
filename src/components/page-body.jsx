@@ -34,7 +34,7 @@ import Login from "./pages/Login";
 import Page404 from "./pages/Page404";
 import Page500 from "./pages/Page500";
 import Register from "./pages/Register";
-import BellComponent from "./bell";
+
 import CButtons from "./Buttons/buttons";
 import Widgets from "./widgets/widgets";
 import WidgetsBrand from "./widgets/widgetsbrand";
@@ -51,8 +51,8 @@ const PageBody = () => {
   };
   return (
     <>
-      <Header bellopen={togglebell} />
-      <BellComponent bell={bell} />
+      <Header  />
+      
       <div className="content">
         <Routes>
           <Route path="/" element={<Home />} />

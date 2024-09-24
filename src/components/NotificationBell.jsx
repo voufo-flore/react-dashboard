@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { CCard, CCardContent } from '@coreui/react';
+import { Card, CardContent } from '@mui/material';
+import { Bell } from 'lucide-react';
 
 const NotificationBell = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,8 +28,8 @@ const NotificationBell = () => {
       </button>
 
       {isOpen && (
-        <CCard className="absolute right-0 mt-2 w-72 shadow-lg">
-          <CCardContent className="p-0">
+        <Card className="absolute right-0 mt-2 w-72 shadow-lg">
+          <CardContent className="p-0">
             <div className="p-2 bg-gray-100 text-sm font-semibold">
               You have 5 notifications
             </div>
@@ -42,8 +43,8 @@ const NotificationBell = () => {
                 </li>
               ))}
             </ul>
-          </CCardContent>
-        </CCard>
+          </CardContent>
+        </Card>
       )}
     </div>
   );

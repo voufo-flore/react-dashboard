@@ -1,11 +1,11 @@
-import { Bell, MailOpen, Search, LayoutList, LayoutGrid } from "lucide-react";
+import { Bell, MailOpen, Search, LayoutList, LayoutGrid, Languages } from "lucide-react";
 import "./Navbar.css";
 import Theme from "../Theme/Theme";
 import NotificationBell from "../NotificationBell";
 import MessageDropdown from "../Mailopen";
 import AccountDropdown from "../Account";
 
-const Header = ({ bellopen }) => {
+const Header = () => {
   return (
     <div className="nav-wrapper">
       <div className="nav">
@@ -15,13 +15,12 @@ const Header = ({ bellopen }) => {
         </div>
       </div>
       <div className="lucide">
-        <div onClick={bellopen} style={{ cursor: "pointer" }}>
-          <Bell />
-        </div>
-        <LayoutList />
+        <Bell />
+
+        <NotificationBell />
         <MailOpen />
+
         <LayoutGrid />
-        
       </div>
     </div>
   );

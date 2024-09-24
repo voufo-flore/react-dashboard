@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu } from '@coreui/react';
+import { Menu } from 'lucide-react';
 
 const messages = [
   {
