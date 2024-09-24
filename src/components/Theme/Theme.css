@@ -60,5 +60,5 @@ c {
     transform: 1.5s ease-out;
 }
 input:checked~.animatebg {
-    clip-path: circle(150% at 50% 50% );
+    clip-path: circle(0% at 50% 50% );
 }
