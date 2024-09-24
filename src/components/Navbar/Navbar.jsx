@@ -2,7 +2,8 @@ import { Bell, MailOpen, Search, LayoutList, LayoutGrid } from "lucide-react";
 import "./Navbar.css";
 import Theme from "../Theme/Theme";
 import NotificationBell from "../NotificationBell";
-import Mailopen from "../Mailopen";
+import MessageDropdown from "../Mailopen";
+import AccountDropdown from "../Account";
 
 const Header = ({ bellopen }) => {
   return (
