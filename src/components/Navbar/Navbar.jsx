@@ -1,12 +1,6 @@
-import {
-  Bell,
-  MailOpen,
-  Search,
-  LayoutList,
-  Sun,
-  LayoutGrid,
-} from "lucide-react";
+import { Bell, MailOpen, Search, LayoutList, LayoutGrid } from "lucide-react";
 import "./Navbar.css";
+import Theme from "../Theme/Theme";
 
 const Header = ({ bellopen }) => {
   return (
@@ -23,8 +17,8 @@ const Header = ({ bellopen }) => {
         </div>
         <LayoutList />
         <MailOpen />
-        <Sun />
         <LayoutGrid />
+        <Theme />
       </div>
     </div>
   );

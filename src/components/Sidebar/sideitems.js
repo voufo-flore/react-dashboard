@@ -238,7 +238,7 @@ const sidebarItems = [
         {
           text: "Charts",
           icon: PieChart,
-          link: "/"
+          link: "/charts"
         },
         {
           text: "Google Maps",

@@ -42,6 +42,7 @@ import WidgetsDropdown from "./widgets/widgetsdropdown";
 import CoreUIBrands from "./icons/coreuibrands";
 import CoreUIFlags from "./icons/coreuiflags";
 import CoreUIFree from "./icons/coreuifree";
+import Charts from "./Charts";
 
 const PageBody = () => {
   const [bell, setbell] = useState(false);
@@ -92,7 +93,7 @@ const PageBody = () => {
           <Route path="/coreuibrands" element={<CoreUIBrands />} />
           <Route path="/coreuiflags" element={<CoreUIFlags />} />
           <Route path="/coreuifree" element={<CoreUIFree />} />
-
+          <Route path="/charts" element={<Charts/>} />
 
 
 
