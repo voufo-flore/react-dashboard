@@ -9,6 +9,7 @@ const Theme = () => {
       <Moon className="moon" />
       <Navbar />
       <span className="toggle"></span>
+      <span className="animatebg"></span>
     </label>
   );
 };

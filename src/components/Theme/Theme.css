@@ -19,15 +19,22 @@ input {
     color: #5e5b5b;
     filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.596));
     transition: 1s ease;
+    transform: scale(0);
+}
+input:checked~.sun {
+    transition-delay: 8s;
+    transform: scale(1) rotate(360deg);
 }
 .moon {
     font-size: 3rem;
     color: #5e5b5b;
     filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.596));
     transition: 1s ease;
+    transition-delay: 8s;
 }
-input:checked~.moon {
+c {
     transform: rotate(360deg) scale(0);
+    transition-delay: 0s;
 }
 .toggle {
     position: absolute;
@@ -42,5 +49,16 @@ input:checked~.moon {
       inset 0 -4px 4px rgb(0, 0, 0, .1);
       z-index: -1;
       transition: 1s;
-
+}
+.animatebg {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: #f8f8f8;
+    z-index: -2;
+    clip-path: circle(0% at 50% 50% );
+    transform: 1.5s ease-out;
+}
+input:checked~.animatebg {
+    clip-path: circle(150% at 50% 50% );
 }
