@@ -1,6 +1,6 @@
 .dashboard {
-    background-color: #ffffff;;
-    color: #1f1c1c;
+    background-color: var(--sec-color);
+    color: var(--color);
     padding: 20px;
     font-family: Arial, sans-serif;
   }
@@ -16,7 +16,7 @@
   }
   
   .stat-item {
-    background-color: #f5f6fa;
+    background-color:var(--sec-color);
     padding: 10px;
     border-radius: 5px;
     width: 22%;
@@ -25,7 +25,7 @@
   .stat-item h3 {
     margin: 0;
     font-size: 14px;
-    color: #8c8c8c;
+    color: var(--color);
   }
   
   .stat-item p {
@@ -52,7 +52,7 @@
   .bar-container {
     flex-grow: 1;
     height: 10px;
-    background-color: #d2d4dd;
+    background-color: var(--sec-color);
     display: flex;
   }
   
@@ -76,7 +76,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #c4c9e0;
+    background-color: var(--sec-color);
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;

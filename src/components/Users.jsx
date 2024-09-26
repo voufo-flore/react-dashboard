@@ -94,7 +94,7 @@ const countryFlags = {
 
 const UserTable = () => {
   return (
-    <div style={{ padding: "1rem", backgroundColor: "#fff", color: "black" }}>
+    <div style={{ padding: "1rem", backgroundColor: "var(--sec-color)", color: "var(--color)" }}>
       <div
         style={{
           display: "flex",

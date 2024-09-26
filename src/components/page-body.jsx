@@ -42,17 +42,45 @@ import WidgetsDropdown from "./widgets/widgetsdropdown";
 import CoreUIBrands from "./icons/coreuibrands";
 import CoreUIFlags from "./icons/coreuiflags";
 import CoreUIFree from "./icons/coreuifree";
+import IconsNav from "./Mailopen";
 import Charts from "./Charts";
+import Notifications from "./NotificationBell";
+import LayoutList from "./LayoutList";
+import LeftNav from "./leftnav";
 
 const PageBody = () => {
-  const [bell, setbell] = useState(false);
-  const togglebell = () => {
-    setbell(!bell);
+  const [openmail, setmail] = useState(false);
+  const [opennotif, setnotif] = useState(false);
+  const [openlist, setlist] = useState(false);
+  const [openleftnav, setleftnav] = useState(false);
+  const togglemail = () => {
+    setmail(!openmail);
+  };
+  const togglenotif = () => {
+    setnotif(!opennotif);
+  };
+  const togglelist = () => {
+    setlist(!openlist);
+  };
+  const toggleleftnav = () => {
+    setleftnav(!openleftnav);
+  };
+  const hideleftnav = () => {
+    setleftnav(false);
   };
   return (
     <>
-      <Header  />
-      
+      <Header
+        mailopen={togglemail}
+        notifopen={togglenotif}
+        listopen={togglelist}
+        leftnavopen={toggleleftnav}
+        hideleftnav={hideleftnav}
+      />
+      <IconsNav showmail={openmail} />
+      <Notifications shownotif={opennotif} />
+      <LayoutList showlist={openlist} />
+      <LeftNav showleftnav={openleftnav} hideleftnav={hideleftnav} />
       <div className="content">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -93,12 +121,9 @@ const PageBody = () => {
           <Route path="/coreuibrands" element={<CoreUIBrands />} />
           <Route path="/coreuiflags" element={<CoreUIFlags />} />
           <Route path="/coreuifree" element={<CoreUIFree />} />
-          <Route path="/charts" element={<Charts/>} />
-
-
+          <Route path="/charts" element={<Charts />} />
 
           <Route path="/map" element={<MapComponent />} />
-
         </Routes>
       </div>
     </>

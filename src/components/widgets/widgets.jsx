@@ -41,7 +41,7 @@ const Widgets = () => {
     <CCard className="mb-4">
       <CCardHeader>Widgets</CCardHeader>
       <CCardBody>
-        <DocsExample href="components/widgets/#cwidgetstatsa">
+        <DocsExample href="components/widgets/#cwidgetstatsa"> 
           <WidgetsDropdown />
         </DocsExample>
         <DocsExample href="components/widgets/#cwidgetstatsb">

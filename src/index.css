@@ -5,11 +5,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root{
+  --background:rgb(207, 207, 207);
+  --color:dark;
+  --sec-color:white;
+}
+.darkmode{
+  --background:rgb(10, 2, 34);
+  --color:white;
+  --sec-color:rgb(22,23,47);
+}
 body {
   font-family: "Roboto", sans-serif;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(207, 207, 207);
+  background-color: var(--background);
   overflow: hidden;
 }
 .flore {
@@ -43,10 +53,10 @@ body {
 }
 
 input {
-  background-color: #212631;
+  background-color: var(--background);
   width: 200px;
   border: none;
-  background-color: #f3f4f7;
+  background-color: var(--sec-color);
 }
 
 .calendar {
@@ -71,7 +81,7 @@ input {
 
 .text {
   margin: 7px;
-  color: #414246;
+  color: var(--color);
 }
 .box1 {
   display: flex;
@@ -86,29 +96,33 @@ input {
 .first {
   height: 300px;
   width: 530px;
-  background-color: white;
+  background-color: var(--sec-color);
   border-radius: 10px;
+  color: var(--color);
 }
 .container2 {
   height: 33rem;
   width: 85rem;
-  background-color: white;
+  background-color: var(--sec-color);
   margin-right: 1.4rem;
   border-radius: 10px;
+  color: var(--color);
 }
 .second1 {
   height: 200px;
   width: 250px;
-  background-color: white;
+  background-color: var(--sec-color);
   margin-right: 30px;
   border-radius: 5px;
+  color: var(--color);
 }
 .second2 {
   height: 200px;
   width: 250px;
-  background-color: white;
+  background-color: var(--sec-color);
   margin-right: 3rem;
   border-radius: 5px;
+  color: var(--color);
 }
 
 .num {
@@ -122,7 +136,7 @@ input {
   padding-left: 10px;
   margin-left: 95px;
   border-radius: 10px;
-  color: #fff;
+  color: var(--color);
   background-color: rgb(238, 111, 132);
   cursor: pointer;
   padding-right: 10px;
@@ -137,7 +151,7 @@ input {
 
   margin: 1rem;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: var(--sec-color);
 }
 
 .user,
@@ -147,7 +161,7 @@ input {
   border-radius: 10px;
   height: 12rem;
   margin: 1rem;
-  background: white;
+  background: var(--background);
 }
 .users-right {
   margin-right: 1rem;
@@ -188,7 +202,7 @@ input {
   display: none;
   height: 40%;
   width: 20%;
-  background-color: white;
+  background-color: var(--sec-color);
   right: 100px;
   border: solid 2px black;
   position: absolute;
@@ -201,3 +215,75 @@ input {
 .bell-cnt.close {
   display: none;
 }
+.nav-mail {
+  height: 500px;
+  width: 300px;
+  padding: 50px;
+  background-color: var(--sec-color);
+  text-align: center;
+  display: none;
+  right: 50px;
+  float: right;
+  position: absolute;
+  margin-top: 70px;
+}
+.nav-mail.open {
+  display: block;
+}
+.nav-mail.close {
+  display: none;
+}
+.nav-notification {
+  height: 500px;
+  width: 300px;
+  padding: 50px;
+  background-color: var(--sec-color);
+  text-align: center;
+  display: none;
+  right: 90px;
+  float: right;
+  position: absolute;
+  margin-top: 70px;
+}
+.nav-notification.open {
+  display: block;
+}
+.nav-notification.close {
+  display: none;
+}
+.nav-list {
+  height: 500px;
+  width: 300px;
+  padding: 50px;
+  background-color: var(--sec-color);
+  text-align: center;
+  display: none;
+  right: 70px;
+  float: right;
+  position: absolute;
+  margin-top: 70px;
+}
+.nav-list.open {
+  display: block;
+}
+.nav-list.close {
+  display: none;
+}
+.leftnav {
+  height: 100%;
+  width: 30%;
+  background-color: var(--sec-color);
+  right: -5000px;
+  z-index: 100;
+  display: block;
+  position: fixed;
+  transition: ease-in-out 0.7s;
+}
+.leftnav.open {
+  right: 1px;
+  
+}
+.leftnav.close {
+  right: -5000px;
+}
+

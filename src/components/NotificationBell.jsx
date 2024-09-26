@@ -1,54 +1,55 @@
-import React, { useState } from 'react';
-import { Card, CardContent } from '@mui/material';
-import { Bell } from 'lucide-react';
+import React from "react";
+import { X } from "lucide-react";
 
-const NotificationBell = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const notifications = [
-    { icon: '👤', text: 'New user registered' },
-    { icon: '🗑️', text: 'User deleted' },
-    { icon: '📊', text: 'Sales report is ready' },
-    { icon: '🏢', text: 'New client' },
-    { icon: '⚠️', text: 'Server overloaded' },
-  ];
-
-  const toggleDropdown = () => setIsOpen(!isOpen);
-
+const Notifications = ({ shownotif }) => {
   return (
-    <div className="relative">
-      <button
-        onClick={toggleDropdown}
-        className="p-2 rounded-full hover:bg-gray-200 focus:outline-none"
-      >
-        <Bell className="h-6 w-6" />
-        <span className="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">
-          5
-        </span>
-      </button>
+    <div className={`nav-notification ${shownotif ? "open" : "close"}`}>
+      <div className="top-notif">You have 5 new Notifications</div>
 
-      {isOpen && (
-        <Card className="absolute right-0 mt-2 w-72 shadow-lg">
-          <CardContent className="p-0">
-            <div className="p-2 bg-gray-100 text-sm font-semibold">
-              You have 5 notifications
-            </div>
-            <ul className="divide-y divide-gray-200">
-              {notifications.map((notification, index) => (
-                <li key={index} className="p-3 hover:bg-gray-50">
-                  <div className="flex items-center">
-                    <span className="mr-2">{notification.icon}</span>
-                    <span>{notification.text}</span>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </CardContent>
-        </Card>
-      )}
+      <div className="notif-items">
+        <>notif.icon</>{" "}
+        <div
+          style={{
+            paddingLeft: "10px",
+            paddingTop: "7px",
+          }}
+        >
+          notif.text
+        </div>
+      </div>
+
+      <div className="top-notif">server</div>
+
+      <div className="bottom-notif">
+        <div className="usage-content">
+          <b>CPU STORAGE</b>{" "}
+          <div className="usage-bar" style={{ marginTop: "5px" }}>
+            <div
+              className="users-bar"
+              style={{ width: "20%", background: "rgb(51, 153, 255)" }}
+            ></div>
+          </div>
+        </div>
+        <div className="usage-content">
+          <b>MEMORY USAGE</b>{" "}
+          <div className="usage-bar" style={{ marginTop: "5px" }}>
+            <div
+              className="users-bar"
+              style={{ width: "70%", background: "rgb(255, 204, 0)" }}
+            ></div>
+          </div>
+        </div>
+        <div className="usage-content">
+          <b>SSD 1 USAGE</b>{" "}
+          <div className="usage-bar" style={{ marginTop: "5px" }}>
+            <div
+              className="users-bar"
+              style={{ width: "90%", background: "rgb(239, 55, 110)" }}
+            ></div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
-
-export default NotificationBell;
-
+export default Notifications;

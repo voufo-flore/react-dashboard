@@ -19,7 +19,6 @@ import {
   CDropdown,
   CButton,
 } from '@coreui/react'
-import DocsExample from "../DocsExample";
 
 const Navbars = () => {
   const [visible, setVisible] = useState(false)

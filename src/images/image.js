@@ -5,6 +5,8 @@ const IMAGES = {
     img3 : new URL('../assets/avatars/3.jpg', import.meta.url).href,
     img4 : new URL('../assets/avatars/4.jpg', import.meta.url).href,
     img5 : new URL('../assets/avatars/5.jpg', import.meta.url).href,
+    icon : new URL('../assets/icon.jpeg', import.meta.url).href,
+
 
     angular : new URL('../assets/angualar.jpg', import.meta.url).href,
     react : new URL('../assets/react.jpg', import.meta.url).href,
