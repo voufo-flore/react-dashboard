@@ -11,6 +11,7 @@ import {
   CDropdownToggle,
   CDropdownMenu,
   CDropdownItem,
+  CDropdownDivider,
   CFormCheck,
   CFormInput,
   CInputGroup,
@@ -317,14 +318,14 @@ const CButtonGroups = () => {
                 <CButton color="primary">2</CButton>
                 
                 <CDropdown variant="btn-group">
-                  <CDropdownToggle color="primary">CAvatarDropdown</CDropdownToggle>
-                  <CAvatarDropdownMenu>
-                    <CAvatarDropdownItem href="#">Action</CAvatarDropdownItem>
-                    <CAvatarDropdownItem href="#">Another action</CAvatarDropdownItem>
-                    <CAvatarDropdownItem href="#">Something else here</CAvatarDropdownItem>
-                    <CAvatarDropdownDivider />
-                    <CAvatarDropdownItem href="#">Separated link</CAvatarDropdownItem>
-                  </CAvatarDropdownMenu>
+                  <CDropdownToggle color="primary">CDropdown</CDropdownToggle>
+                  <CDropdownMenu>
+                    <CDropdownItem href="#">Action</CDropdownItem>
+                    <CDropdownItem href="#">Another action</CDropdownItem>
+                    <CDropdownItem href="#">Something else here</CDropdownItem>
+                    <CDropdownDivider />
+                    <CDropdownItem href="#">Separated link</CDropdownItem>
+                  </CDropdownMenu>
                 </CDropdown>
               </CButtonGroup>
             </DocsExample>
@@ -356,48 +357,48 @@ const CButtonGroups = () => {
               <CButtonGroup vertical role="group" aria-label="Vertical button group">
                 <CButton color="primary">CButton</CButton>
                 <CButton color="primary">CButton</CButton>
-                <CAvatarDropdown variant="btn-group">
-                  <CAvatarDropdownToggle color="primary">CAvatarDropdown</CAvatarDropdownToggle>
-                  <CAvatarDropdownMenu>
-                    <CAvatarDropdownItem href="#">Action</CAvatarDropdownItem>
-                    <CAvatarDropdownItem href="#">Another action</CAvatarDropdownItem>
-                    <CAvatarDropdownItem href="#">Something else here</CAvatarDropdownItem>
-                    <CAvatarDropdownDivider />
-                    <CAvatarDropdownItem href="#">Separated link</CAvatarDropdownItem>
-                  </CAvatarDropdownMenu>
-                </CAvatarDropdown>
+                <CDropdown variant="btn-group">
+                  <CDropdownToggle color="primary">CDropdown</CDropdownToggle>
+                  <CDropdownMenu>
+                    <CDropdownItem href="#">Action</CDropdownItem>
+                    <CDropdownItem href="#">Another action</CDropdownItem>
+                    <CDropdownItem href="#">Something else here</CDropdownItem>
+                    <CDropdownDivider />
+                    <CDropdownItem href="#">Separated link</CDropdownItem>
+                  </CDropdownMenu>
+                </CDropdown>
                 <CButton color="primary">CButton</CButton>
                 <CButton color="primary">CButton</CButton>
-                <CAvatarDropdown variant="btn-group">
-                  <CAvatarDropdownToggle color="primary">CAvatarDropdown</CAvatarDropdownToggle>
-                  <CAvatarDropdownMenu>
-                    <CAvatarDropdownItem href="#">Action</CAvatarDropdownItem>
-                    <CAvatarDropdownItem href="#">Another action</CAvatarDropdownItem>
-                    <CAvatarDropdownItem href="#">Something else here</CAvatarDropdownItem>
-                    <CAvatarDropdownDivider />
-                    <CAvatarDropdownItem href="#">Separated link</CAvatarDropdownItem>
-                  </CAvatarDropdownMenu>
-                </CAvatarDropdown>
-                <CAvatarDropdown variant="btn-group">
-                  <CAvatarDropdownToggle color="primary">CAvatarDropdown</CAvatarDropdownToggle>
-                  <CAvatarDropdownMenu>
-                    <CAvatarDropdownItem href="#">Action</CAvatarDropdownItem>
-                    <CAvatarDropdownItem href="#">Another action</CAvatarDropdownItem>
-                    <CAvatarDropdownItem href="#">Something else here</CAvatarDropdownItem>
-                    <CAvatarDropdownDivider />
-                    <CAvatarDropdownItem href="#">Separated link</CAvatarDropdownItem>
-                  </CAvatarDropdownMenu>
-                </CAvatarDropdown>
-                <CAvatarDropdown variant="btn-group">
-                  <CAvatarDropdownToggle color="primary">CAvatarDropdown</CAvatarDropdownToggle>
-                  <CAvatarDropdownMenu>
-                    <CAvatarDropdownItem href="#">Action</CAvatarDropdownItem>
-                    <CAvatarDropdownItem href="#">Another action</CAvatarDropdownItem>
-                    <CAvatarDropdownItem href="#">Something else here</CAvatarDropdownItem>
-                    <CAvatarDropdownDivider />
-                    <CAvatarDropdownItem href="#">Separated link</CAvatarDropdownItem>
-                  </CAvatarDropdownMenu>
-                </CAvatarDropdown>
+                <CDropdown variant="btn-group">
+                  <CDropdownToggle color="primary">CDropdown</CDropdownToggle>
+                  <CDropdownMenu>
+                    <CDropdownItem href="#">Action</CDropdownItem>
+                    <CDropdownItem href="#">Another action</CDropdownItem>
+                    <CDropdownItem href="#">Something else here</CDropdownItem>
+                    <CDropdownDivider />
+                    <CDropdownItem href="#">Separated link</CDropdownItem>
+                  </CDropdownMenu>
+                </CDropdown>
+                <CDropdown variant="btn-group">
+                  <CDropdownToggle color="primary">CDropdown</CDropdownToggle>
+                  <CDropdownMenu>
+                    <CDropdownItem href="#">Action</CDropdownItem>
+                    <CDropdownItem href="#">Another action</CDropdownItem>
+                    <CDropdownItem href="#">Something else here</CDropdownItem>
+                    <CDropdownDivider />
+                    <CDropdownItem href="#">Separated link</CDropdownItem>
+                  </CDropdownMenu>
+                </CDropdown>
+                <CDropdown variant="btn-group">
+                  <CDropdownToggle color="primary">CDropdown</CDropdownToggle>
+                  <CDropdownMenu>
+                    <CDropdownItem href="#">Action</CDropdownItem>
+                    <CDropdownItem href="#">Another action</CDropdownItem>
+                    <CDropdownItem href="#">Something else here</CDropdownItem>
+                    <CDropdownDivider />
+                    <CDropdownItem href="#">Separated link</CDropdownItem>
+                  </CDropdownMenu>
+                </CDropdown>
               </CButtonGroup>
             </DocsExample>
             <DocsExample href="components/button-group/#vertical-variation">
