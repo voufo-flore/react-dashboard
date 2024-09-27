@@ -286,4 +286,7 @@ input {
 .leftnav.close {
   right: -5000px;
 }
-
+.vue {
+  height: 4rem;
+  width: 93rem;
+}

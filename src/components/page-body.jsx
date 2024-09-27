@@ -48,6 +48,8 @@ import Notifications from "./NotificationBell";
 import LayoutList from "./LayoutList";
 import LeftNav from "./leftnav";
 import Navbars from "./Base/navbars";
+import CButtonGroups from "./Buttons/buttongroups";
+import CDropdowns from "./Buttons/dropdowns";
 
 const PageBody = () => {
   const [openmail, setmail] = useState(false);
@@ -117,6 +119,8 @@ const PageBody = () => {
           <Route path="/page500" element={<Page500 />} />
           <Route path="/register" element={<Register />} />
           <Route path="/buttons" element={<CButtons />} />
+          <Route path="/buttongroups" element={<CButtonGroups/>} />
+          <Route path="/dropdowns" element={<CDropdowns />} />
           <Route path="/widgets" element={<Widgets />} />
           <Route path="/widgetsbrand" element={<WidgetsBrand />} />
           <Route path="/widgetsdropdown" element={<WidgetsDropdown />} />
