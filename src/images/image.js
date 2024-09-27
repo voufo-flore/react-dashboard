@@ -8,8 +8,6 @@ const IMAGES = {
     icon1 : new URL('../assets/icon.jpeg', import.meta.url).href,
     flore: new URL('../assets/flore.jpeg', import.meta.url).href,
 
-
-
     angular : new URL('../assets/angualar.jpg', import.meta.url).href,
     react : new URL('../assets/react.jpg', import.meta.url).href,
     vue : new URL('../assets/vue.jpg', import.meta.url).href,
