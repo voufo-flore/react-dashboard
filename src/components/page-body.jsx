@@ -20,7 +20,7 @@ import Tables from "./Base/tables";
 import ChecksRadios from "./forms/ChecksRadios";
 import FloatingLabels from "./forms/floatinglabels";
 import FormControl from "./forms/formcontrol";
-import InputGroup from "./forms/inputgroup";
+import CInputGroup from "./forms/inputgroup";
 import Layout from "./forms/layout";
 import Range from "./forms/range";
 import Select from "./forms/select";
@@ -105,7 +105,7 @@ const PageBody = () => {
           <Route path="/checksradios" element={<ChecksRadios />} />
           <Route path="/floatinglabels" element={<FloatingLabels />} />
           <Route path="/formcontrol" element={<FormControl />} />
-          <Route path="/inputgroup" element={<InputGroup />} />
+          <Route path="/inputgroup" element={<CInputGroup />} />
           <Route path="/layout" element={<Layout />} />
           <Route path="/range" element={<Range />} />
           <Route path="/select" element={<Select />} />
