@@ -1,8 +1,8 @@
 import "@coreui/coreui/dist/css/coreui.min.css";
 import React, { useState } from "react";
-import Header from "./Navbar/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Home";
+import Header from "./Navbars/Navbar";
 import FullCalendar from "./Calendar/Calendar";
 import ColorGenerator from "./Color";
 import Accordion from "./Base/accordion";
@@ -47,6 +47,7 @@ import Charts from "./Charts";
 import Notifications from "./NotificationBell";
 import LayoutList from "./LayoutList";
 import LeftNav from "./leftnav";
+import Navbars from "./Base/navbars";
 
 const PageBody = () => {
   const [openmail, setmail] = useState(false);
@@ -92,6 +93,7 @@ const PageBody = () => {
           <Route path="/base/carousels" element={<Carousels />} />
           <Route path="/base/collapses" element={<Collapses />} />
           <Route path="/base/listgroups" element={<ListGroups />} />
+          <Route path="/base/navbars" element={<Navbars />} />
           <Route path="/base/pagination" element={<Paginations />} />
           <Route path="/base/popovers" element={<Popovers />} />
           <Route path="/base/progress" element={<Progress />} />

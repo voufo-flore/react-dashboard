@@ -19,6 +19,8 @@ import {
   CDropdown,
   CButton,
 } from '@coreui/react'
+import IMAGES from '../../images/image';
+import DocsExample from "../DocsExample";
 
 const Navbars = () => {
   const [visible, setVisible] = useState(false)
@@ -27,6 +29,7 @@ const Navbars = () => {
 
   return (
     <>
+     <DocsExample href="components/card">
       <CCard className="mb-4">
         <CCardHeader>
           CNavbar
@@ -69,15 +72,17 @@ const Navbars = () => {
           </CNavbar>
         </CCardBody>
       </CCard>
+      </DocsExample>
 
+      <DocsExample href="components/card">
       <CCard className="mb-4">
         <CCardHeader>CNavbar brand</CCardHeader>
         <CCardBody>
           <CNavbar color="faded" light>
             <CNavbarBrand>
               <CImage
-                src="https://placekitten.com/g/30/30"
-                className="d-inline-block align-top"
+                src={IMAGES.vue}
+                className="vue"
                 alt="CoreuiVue"
               />
               CoreUI React
@@ -85,7 +90,9 @@ const Navbars = () => {
           </CNavbar>
         </CCardBody>
       </CCard>
+      </DocsExample>
 
+      <DocsExample href="components/card">
       <CCard className="mb-4">
         <CCardHeader>CNavbar text</CCardHeader>
         <CCardBody>
@@ -105,7 +112,9 @@ const Navbars = () => {
           </CNavbar>
         </CCardBody>
       </CCard>
+      </DocsExample >
 
+      <DocsExample href="components/card">
       <CCard className="mb-4">
         <CCardHeader>CNavbar dropdown</CCardHeader>
         <CCardBody>
@@ -141,7 +150,10 @@ const Navbars = () => {
           </CNavbar>
         </CCardBody>
       </CCard>
+      </DocsExample>
 
+
+      <DocsExample href="components/card">
       <CCard className="mb-4">
         <CCardHeader>CNavbar form</CCardHeader>
         <CCardBody>
@@ -155,7 +167,9 @@ const Navbars = () => {
           </CNavbar>
         </CCardBody>
       </CCard>
+      </DocsExample >
 
+      <DocsExample href="components/card">
       <CCard className="mb-4">
         <CCardHeader>CNavbar input group</CCardHeader>
         <CCardBody>
@@ -166,6 +180,8 @@ const Navbars = () => {
           </CNavbar>
         </CCardBody>
       </CCard>
+      </DocsExample>
+
     </>
   )
 }
