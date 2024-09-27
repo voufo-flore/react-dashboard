@@ -42,6 +42,7 @@ const Charts = () => {
         style={{
           display: "flex",
           flexWrap: "wrap",
+          margin: '20px',
         }}
       >
         {chartdata.map((chart, index) => (
@@ -50,7 +51,8 @@ const Charts = () => {
                 height:'100%',
                 width:'400px',
                 background:'white',
-                margin:'20px'
+                margin:'40px'
+
             }}>
               <chart.charttype data={data} style={{
                 height:'100%'

@@ -5,6 +5,7 @@ import { Chart, registerables } from "chart.js";
 import { MoveDown, MoveUp, ShoppingCart, UserPlus, Users } from "lucide-react";
 import UserBoard from "./Users";
 import TrafficDashboard from "./TrafficDashboard/TrafficDashboard";
+import { Link } from "react-router-dom";
 
 Chart.register(CategoryScale, ...registerables);
 const Home = () => {
@@ -77,7 +78,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="home">Home</div>
+      <div className="home"> <Link>Home</Link></div>
       <div className="box1">
         <div className="container1">
           <div className="first">

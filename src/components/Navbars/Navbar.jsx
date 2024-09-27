@@ -2,6 +2,7 @@ import { Bell, MailOpen, Search, LayoutList, LayoutGrid } from "lucide-react";
 import "./Navbar.css";
 import { Sun, Moon } from "lucide-react";
 import "../Theme/Theme.css";
+import IMAGES from "../../images/image";
 import { useEffect, useState } from "react";
 
 const Header = ({ mailopen, notifopen, listopen, leftnavopen }) => {

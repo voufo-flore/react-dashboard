@@ -24,9 +24,9 @@ const sidebarItems = [
           link: "/color"
         },
         {
-          text: "Topography",
+          text: "Typography",
           icon: Pencil,
-          link: "/Topography"
+          link: "/typography"
         }
       ]
     },

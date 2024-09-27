@@ -1,13 +1,14 @@
 import React from "react";
-import { X } from "lucide-react";
+import { BellDot} from "lucide-react";
 
 const Notifications = ({ shownotif }) => {
   return (
     <div className={`nav-notification ${shownotif ? "open" : "close"}`}>
-      <div className="top-notif">You have 5 new Notifications</div>
+      <div className="top-notif">You have 5 new Notifications</div><hr />
 
       <div className="notif-items">
-        <>notif.icon</>{" "}
+        <> 
+        notif.icon</>{" "}
         <div
           style={{
             paddingLeft: "10px",

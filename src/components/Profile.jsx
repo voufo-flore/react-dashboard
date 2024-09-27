@@ -1,5 +1,4 @@
-import React from "react";
-import { X } from "lucide-react";
+import React from 'react'
 import {
   CAvatar,
   CBadge,
@@ -9,7 +8,7 @@ import {
   CDropdownItem,
   CDropdownMenu,
   CDropdownToggle,
-} from '@coreui/react';
+} from '@coreui/react'
 import {
   cilBell,
   cilCreditCard,
@@ -20,16 +19,16 @@ import {
   cilSettings,
   cilTask,
   cilUser,
-} from '@coreui/icons';
-import IMAGES from '../images/image';
-import CIcon from '@coreui/icons-react';
+} from '@coreui/icons'
+import CIcon from '@coreui/icons-react'
 
-const LeftNav = ({ showleftnav, hideleftnav }) => {
+import avatar8 from './../../assets/images/avatars/8.jpg'
+
+const AppHeaderDropdown = () => {
   return (
-    <div className={`leftnav ${showleftnav ? "open" : "close"}`}>
-      <CDropdown variant="nav-item">
+    <CDropdown variant="nav-item">
       <CDropdownToggle placement="bottom-end" className="py-0 pe-0" caret={false}>
-        <CAvatar src={IMAGES.img3} size="md" />
+        <CAvatar src={avatar8} size="md" />
       </CDropdownToggle>
       <CDropdownMenu className="pt-0" placement="bottom-end">
         <CDropdownHeader className="bg-body-secondary fw-semibold mb-2">Account</CDropdownHeader>
@@ -91,10 +90,7 @@ const LeftNav = ({ showleftnav, hideleftnav }) => {
         </CDropdownItem>
       </CDropdownMenu>
     </CDropdown>
-      
-    </div>
-    
-  );
-};
+  )
+}
 
-export default LeftNav;
+export default AppHeaderDropdown

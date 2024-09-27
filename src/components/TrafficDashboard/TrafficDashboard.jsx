@@ -80,37 +80,16 @@ const TrafficDashboard = () => {
       
       <div className="demographics">
         <div className="demo-item">
-          <span className="icon">👤</span>
-          <span>Male</span>
-          <span>43%</span>
+          <span className="icon" >👤 Male</span>
+          <div className="bar-container">
+            <div className="bar new" style={{width: '80%', color:'yellow'}}></div>
+          </div>
         </div>
         <div className="demo-item">
-          <span className="icon">👤</span>
-          <span>Female</span>
-          <span>37%</span>
-        </div>
-      </div>
-      
-      <div className="sources">
-        <div className="source-item">
-          <span className="icon">🔍</span>
-          <span>Organic Search</span>
-          <span>191,235 (56%)</span>
-        </div>
-        <div className="source-item">
-          <span className="icon">f</span>
-          <span>Facebook</span>
-          <span>51,223 (15%)</span>
-        </div>
-        <div className="source-item">
-          <span className="icon">🐦</span>
-          <span>Twitter</span>
-          <span>37,564 (11%)</span>
-        </div>
-        <div className="source-item">
-          <span className="icon">in</span>
-          <span>LinkedIn</span>
-          <span>27,319 (8%)</span>
+          <span className="icon">👤Female</span>
+        <div className="bar-container">
+            <div className="bar new" style={{width: '80%', color:'yellow'}}></div>
+          </div>
         </div>
       </div>
     </div>

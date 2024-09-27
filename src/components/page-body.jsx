@@ -50,6 +50,7 @@ import LeftNav from "./leftnav";
 import Navbars from "./Base/navbars";
 import CButtonGroups from "./Buttons/buttongroups";
 import CDropdowns from "./Buttons/dropdowns";
+import Typography from "./Typography";
 
 const PageBody = () => {
   const [openmail, setmail] = useState(false);
@@ -128,7 +129,7 @@ const PageBody = () => {
           <Route path="/coreuiflags" element={<CoreUIFlags />} />
           <Route path="/coreuifree" element={<CoreUIFree />} />
           <Route path="/charts" element={<Charts />} />
-
+          <Route path="/typography" element={<Typography />} />
           <Route path="/map" element={<MapComponent />} />
         </Routes>
       </div>

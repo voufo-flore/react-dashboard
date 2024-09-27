@@ -35,7 +35,9 @@ const users = [
     registered: "Jan 10, 2023",
     lastLogin: "10 seconds ago",
     status: "New",
+    
   },
+  
   {
     name: "Avram Tarasios",
     img: IMAGES.img2,
@@ -63,6 +65,7 @@ const users = [
     lastLogin: "1 week ago",
     status: "New",
   },
+  
   {
     name: "Agapetus Tadeáš",
     img: IMAGES.img5,
@@ -94,7 +97,7 @@ const countryFlags = {
 
 const UserTable = () => {
   return (
-    <div style={{ padding: "1rem", backgroundColor: "var(--sec-color)", color: "var(--color)" }}>
+    <div style={{ padding: "1rem", backgroundColor: "var(--sec-color)", color: "var(--color)", marginTop: "1.5rem" }}>
       <div
         style={{
           display: "flex",
