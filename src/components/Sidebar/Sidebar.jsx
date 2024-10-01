@@ -2,18 +2,20 @@ import IMAGES from "../../images/image";
 import sidebarItems from "./sideitems";
 import "./Sidebar.css";
 import { SidebarItem, SidebarDropdownItem } from "./sidebarItems";
-import { Gauge} from "lucide-react";
+import { Gauge, X } from "lucide-react";
 
 // Main Sidebar Component
-const Sidebar = () => {
-  const navItems = sidebarItems
+const Sidebar = ({ sidebar, nosidebar }) => {
+  const navItems = sidebarItems;
 
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${sidebar ? "open" : "close"}`}>
       <div className="nav">
         <div className="nav-links">
           <div className="logo">
+            
             <img src={IMAGES.flore2} alt="logo image" />
+            <div className="remover" onClick={nosidebar} style={{fontSize:'30px', cursor:'pointer'}}><X/></div>
           </div>
           <SidebarItem
             sidebarItem={{

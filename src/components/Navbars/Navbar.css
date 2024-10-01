@@ -4,6 +4,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+}
+.menu-icon{
+  font-size: 30px;
+  margin: 20px;
+  cursor: pointer;
+  display: none;
 }
 
 .nav {
@@ -31,4 +38,10 @@
 
 .search-icon {
   opacity: 0.8;
+}
+@media (max-width:1000px) {
+  .menu-icon{
+    
+    display: block;
+  }
 }

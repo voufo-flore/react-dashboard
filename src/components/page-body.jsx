@@ -52,11 +52,12 @@ import CButtonGroups from "./Buttons/buttongroups";
 import CDropdowns from "./Buttons/dropdowns";
 import Typography from "./Typography";
 
-const PageBody = () => {
+const PageBody = ({togglesidebar}) => {
   const [openmail, setmail] = useState(false);
   const [opennotif, setnotif] = useState(false);
   const [openlist, setlist] = useState(false);
   const [openleftnav, setleftnav] = useState(false);
+  
   const togglemail = () => {
     setmail(!openmail);
   };
@@ -75,6 +76,7 @@ const PageBody = () => {
   return (
     <>
       <Header
+        sidebaropen={togglesidebar}
         mailopen={togglemail}
         notifopen={togglenotif}
         listopen={togglelist}

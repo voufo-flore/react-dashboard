@@ -55,10 +55,13 @@ const colors = [
 const ColorDisplay = () => {
   return (
     <div>
-      <div style={styles.container}>
+      <div style={{display: "flex",
+    
+    flexWrap:'wrap',}}>
         {colors.map((colorObj, index) => (
+          <div key={index}>
           <div
-            key={index}
+            
             style={{
               ...styles.colorBox,
               backgroundColor: colorObj.hex,
@@ -66,14 +69,16 @@ const ColorDisplay = () => {
           >
             {/* {`${colorObj.color} (${colorObj.rgb})`} */}
           </div>
+          <p>{colorObj.color}</p>
+          <p>{colorObj.hex}</p>
+          <p>{colorObj.rgb}</p>
+          </div>
         ))}
       </div>
       <div style={styles.container}>
           {colors.map((colorTxt, index) => (
             <div key={index}>
-              <p>{colorTxt.color}</p>
-              <p>{colorTxt.hex}</p>
-              <p>{colorTxt.rgb}</p>
+              
             </div>
           ))}
         </div>
@@ -84,12 +89,15 @@ const ColorDisplay = () => {
 const styles = {
   container: {
     display: "flex",
+    
+    
     // flexDirection: 'column',
     alignItems: "center",
     justifyContent: "space-between",
     margin: "20px",
   },
   colorBox: {
+    flexWrap:'wrap',
     width: "150px",
     height: "100px",
     margin: "10px",
